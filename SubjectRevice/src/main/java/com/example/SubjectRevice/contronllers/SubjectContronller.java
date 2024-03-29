@@ -22,7 +22,5 @@ public class SubjectContronller {
     @PostMapping("/subjects")
     public  Subject addSubject(@RequestBody Subject subject){
         return subjectService.addSubject(subject);
-
-
     }
 }
