@@ -19,4 +19,9 @@ public class SubjectService {
     public Subject addSubject(Subject subject){
         return subjectRepositoty.save(subject);
     }
+    public  Subject getSubject(Long id){
+        Subject Subject = subjectRepositoty.findById(id).get();
+        return Subject;
+    }
+
 }

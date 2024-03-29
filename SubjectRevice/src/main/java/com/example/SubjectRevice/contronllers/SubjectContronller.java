@@ -23,4 +23,9 @@ public class SubjectContronller {
     public  Subject addSubject(@RequestBody Subject subject){
         return subjectService.addSubject(subject);
     }
+    @GetMapping("/subjects/{id}")
+    public Subject getUserById(@PathVariable(value = "id") long id){
+        return subjectService.getSubject(id);
+    }
+
 }

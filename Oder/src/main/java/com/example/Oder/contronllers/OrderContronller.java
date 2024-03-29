@@ -22,10 +22,10 @@ public class OrderContronller {
     }
 
 
-    @GetMapping("/orders/{id}")
-    public Order getUserById(@PathVariable(value = "id") long id){
-        return orderSevice.getOrderId(id);
-    }
+//    @GetMapping("/orders/{id}")
+//    public Order getUserById(@PathVariable(value = "id") long id){
+//        return orderSevice.getOrderId(id);
+//    }
 
     @PostMapping("/orders")
     public Order addOrder(@RequestBody Order order) {

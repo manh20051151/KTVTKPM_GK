@@ -16,7 +16,15 @@ spring:
           uri: http://localhost:8083
           predicates:
             - Path=/api/v1/**
+          filters:
+            - AuthenticationFilter
         - id: Oder
           uri: http://localhost:8084
           predicates:
             - Path=/api/v2/**
+        - id: JWT
+          uri: http://localhost:8181
+          predicates:
+            - Path=/auth/**
+          filters:
+            - AuthenticationFilter

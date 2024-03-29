@@ -22,12 +22,7 @@ public class Subject {
     @Column(name = "Subject_Credit")
     private  String Credit;
 
-    @OneToOne
-    private User user;
 
-    public Subject(long subId, String name, String credit) {
-        SubId = subId;
-        Name = name;
-        Credit = credit;
-    }
+
+
 }
